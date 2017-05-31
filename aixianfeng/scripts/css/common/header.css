@@ -1,0 +1,14 @@
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4.5833rem;
+	background: #ffd600;
+	line-height: 4.5833rem;
+}
+header p{
+	text-align: center;
+	color: #333;
+	font-size: 1.4rem;
+}

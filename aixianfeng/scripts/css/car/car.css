@@ -1,0 +1,262 @@
+.car header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4.5833rem;
+	background: #f9fafd;
+	line-height: 4.5833rem;
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: #333;
+	border: 1px solid #e0e0e0;
+}
+/* -------section------ */
+.car section{
+	position: absolute;
+	top: 4.5833rem;
+	bottom: 5.0rem;
+	left: 0;
+	right: 0;
+	overflow: auto;
+}
+.car section{
+	background: #e0e0e0;
+}
+.car .nametext{
+	background: url("../../../imgs/car/icon.png") repeat-x left bottom, url("../../../imgs/car/icon.png") repeat-x left top;
+	/* background-image: url("../img/icon.png");
+	line-height: 1.4rem;
+	    background-repeat: repeat-x; */
+    /* background-position: left top,left bottom; */
+    background-size: auto .3rem;
+    color: #333;
+    font-size: 1.4rem;
+    background-color: #fff;
+    position: relative;
+}
+.car .nameLeft{
+	padding-left: 1rem;
+}
+.car .hidden{
+	visibility: hidden;
+}
+.car .spanleft{
+	float: left;
+}
+.car .spanright{
+	float: left;
+	width: 14.75rem;
+}
+.car .nametext p {
+	line-height: 1.4rem;
+	padding: .7rem 0;
+}
+
+.car .nameRight{
+	position: absolute;
+	width: 4.5rem;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+.car .nameRight span{
+	position: absolute;
+	top: 50%;
+	width: 4.5rem;
+	transform: translateY(-50%);
+	background: url("../../../imgs/car/more.png") no-repeat right center;
+	background-size: 1.8rem;
+}
+.car .marketGo{
+	margin-top: 1.0rem;
+	padding: .5rem 0 0 1rem;
+	position: relative;
+	background: #fff;
+	border-bottom: 1px solid #e0e0e0;
+}
+.car .pmarket{
+	height: 3rem;
+	font-size: 1.2rem;
+	color: #999;
+	line-height: 2rem;
+}
+.car .ptime{
+	font-size: 1.1rem;
+	line-height: 2rem;
+	color: #999;
+}
+.car .pgo{
+	position: absolute;
+	top: .5rem;
+	right: 3rem;
+	width: 7.1667rem;
+	height: 2.5833rem;
+	border: 1px solid #ff3800;
+	color: #e64f1a;
+	text-align: center;
+	line-height: 2.5833rem;
+	border-radius: 1.2rem;
+}
+.car .select-goods{
+	background: #fff;
+}
+.car .select-goods li{
+	position: relative;
+	display: flex;
+	border-bottom: 1px solid #e0e0e0;
+}
+.car .circle{
+	width: 5.0rem;
+	text-align: center;
+}
+.car .circleInner{
+	display: inline-block;
+	width: 1.7rem;
+	height: 1.7rem;
+	border-radius: 50%;
+	border: 1px solid #e0e0e0;	
+}
+.car .zhong{
+	margin-top: 50%;
+    transform: translateY(50%);
+}
+.car .yellow{
+	background: url("../../../imgs/car/check.png") no-repeat left center;
+	background-size: 100%;
+	border: none;
+}
+.car .carImg{
+	width: 5.0rem;
+}
+.car .carImg img{
+	width: 5.0rem;
+	height: 5.0rem;
+	margin-top: 50%;
+    transform: translateY(-25%);
+}
+.car .carTitle{
+	width: 16.666rem;
+}
+.car .carTitle{
+	padding-left: 1.4rem;
+	line-height: 4.0rem;
+	color: #333;
+	font-size: 1.4rem;
+}
+.car .ellip{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.car .sellect-amount{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 10.0rem;
+	height: 5.0rem;
+}
+.car .sbustract{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	width: 5.0rem;
+	height: 5.0rem;
+	z-index: 2;
+}
+.car .add{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	width: 5.0rem;
+	height: 5.0rem;
+	z-index: 2;
+}
+.car .inner{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 2.6rem;
+	height: 2.6rem;
+	border: 1px solid #ff4300;
+	border-radius: 50%;
+}
+.car .sbustract .inner{
+	background: #ff4300 url("../../../imgs/car/jian.png") no-repeat left center;
+	background-size: 200% auto;
+}
+.car .add .inner{
+	background: #ff4300 url("../../../imgs/car/jian.png") no-repeat -2.6rem center;
+	background-size: 200% auto;
+}
+.car .number{
+	color: #333;
+	font-size: 1.2rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	line-height: 5rem;
+}
+.car .money{
+	height: 5.0rem;
+	display: flex;
+	padding-left: 1.0rem;
+	line-height: 5.0rem;
+	background: #fff;
+	font-size: 1.4rem;
+	color: #333;
+	position: relative;
+}
+.car .allSelect{
+	width: 29%;
+}
+.car .good{
+	width: 38.71%;
+	text-align: center;
+	background: #ffd600;
+}
+.car .moneyCount{
+	width: 32.29%;
+}
+.car .moneyCount span{
+	color: #e64f1a;
+}
+.car .spanzhong{
+	vertical-align: -0.3333rem;
+}
+.car .lightbox{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 5rem;
+	width: 37.5%;
+	background-color: rgba(114,114,114,.5);
+	z-index: 3;
+}
+.car .goTit{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 40%;
+	transform: translateY(-50%);
+	line-height: 4.0rem;
+	font-size: 1.6rem;
+	color: #333;
+}
+.car .goShop{
+	width: 10.0rem;
+	height: 3.0rem;
+	line-height: 3.0rem;
+	margin: 0 auto;
+	border: 1px solid #e0e0e0;
+}
+.car .bg{
+	background: #efefef;
+}

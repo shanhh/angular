@@ -1,0 +1,1 @@
+define(["app"],function(i){i.directive("mySwiper",function(){return{restrict:"EC",replace:!0,template:'<div class="swiper-container"><div class="swiper-wrapper"><div class="swiper-slide" ng-repeat = "url in swiper"><img ng-src = "{{url}}" alt=""/></div></div>\x3c!-- 如果需要分页器 --\x3e<div class="swiper-pagination"></div></div>'}})});

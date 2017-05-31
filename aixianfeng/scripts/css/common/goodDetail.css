@@ -1,0 +1,58 @@
+.goodDetail .header{
+	height: 4.5rem;
+	border-bottom: 1px solid #e0e0e0;
+	background-color: #f9fafd;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-left: .5rem;
+}
+.goodDetail .addGoods{
+	position: absolute;
+	height: 5.0rem;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #e0e0e0;
+	background: #fff;
+}
+.goodDetail .content{
+	position: absolute;
+	top: 4.6rem;
+	bottom: 5.1rem;
+	left: 0;
+	right: 0;
+	overflow: auto;
+}
+.goodDetail .header span{
+	display: inline-block;
+	width: 6.0rem;
+	height: 4.5rem;
+	background: url("../../../imgs/mine/go.png") no-repeat left center;
+	background-size: 40%;
+}
+.goodDetail .headerName{
+	position: absolute;
+	left: 6rem;
+	right: 6.0rem;
+	top: 0;
+	bottom: 0;
+	text-align: center;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 4.5rem;
+	color: #333;
+}
+.goodDetail .bigImg{
+	padding: 1rem;
+}
+.goodDetail .bigImg img{
+	width:100%;
+}
+
+
+

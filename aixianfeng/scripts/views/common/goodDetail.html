@@ -1,0 +1,19 @@
+<!-- <link rel="stylesheet" href="common/css/goodDetail.css"> -->
+<div class="goodDetail">
+	<div class="header">
+		<span onclick="history.back()"></span>
+		<div class="headerName">{{ goodsId.long_name }}</div>
+	</div>
+	<div class="content">
+		<div class="bigImg">
+			<img ng-src="{{ goodsId.img }}" alt="">
+		</div>
+		<div class="pName">
+			<p>{{ goodsId.long_name }}</p>
+		</div>
+		<div>￥<span>{{goodsId.price}}</span></div>
+	</div>
+	<div class="addGoods">
+		买买
+	</div>
+</div>

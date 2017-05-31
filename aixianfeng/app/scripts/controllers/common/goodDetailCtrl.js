@@ -1,0 +1,1 @@
+define(["app"],function(s){return["$scope","$stateParams","$css",function(s,o,c){c.bind({href:"scripts/css/common/goodDetail.css"},s),s.goodsId=JSON.parse(o.id),console.log(s.goodsId)}]});

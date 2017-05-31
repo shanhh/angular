@@ -1,0 +1,1 @@
+define(["angular"],function(u){return u.module("axfApp",["ui.router","angularCSS"])});

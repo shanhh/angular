@@ -1,0 +1,21 @@
+<!-- <link rel="stylesheet" href="mine/css/order.css"> -->
+<div class="order">
+	<div class="header">
+		<span ng-click="back()"></span>
+		<div class="headerName">我的订单</div>
+	</div>
+	<div class="content">
+		<div class="orderList">
+			<ol>
+				<li ng-repeat="(index, value) in ['全部订单', '待付款', '待收货', '待评价', '退款/售后']" ng-class="{'change': currentIndex == index}" ng-click="change(index)">{{ value }}</li>
+			</ol>
+		</div>
+		<div class="orderContent">
+			<div>全部订单</div>
+			<div>待付款</div>
+			<div>待收货</div>
+			<div>待评价</div>
+			<div>退款/收货</div>
+		</div>
+	</div>
+</div>

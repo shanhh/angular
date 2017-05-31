@@ -1,0 +1,60 @@
+<!-- <link rel="stylesheet" href="car/css/car.css"> -->
+<div class="car">
+	<header>
+		购物车
+	</header>
+	<section ng-show="carGoods.length != 0">
+		<div class="nametext">
+			<div class="nameLeft clear">
+				<p><span>收<span class="hidden">a</span>货<span class="hidden">a</span>人&nbsp;&nbsp;</span><span>单浩辉&nbsp;先生</span></p>
+				<p><span>电<span class="hidden">中中</span>话&nbsp;</span> <span>18531241675</span></p>
+				<p class="clear"><span class="spanleft">收货地址&nbsp;&nbsp;</span><span class="spanright">北京市育知同创 二楼2665前台收货预知同创</span></p>
+			</div>
+			<div class="nameRight">
+				<span>修改</span>
+			</div>
+		</div>
+		<div class="marketGo">
+			<p class="pmarket">闪送超市</p>
+			<p class="ptime">¥0起送，22:00前满¥30免运费</p>
+			<p class="pgo">凑单专区</p>
+		</div>
+		<div class="select-goods">
+			<ul>
+				<li ng-repeat="value in carGoods">	
+					<div class="circle" ng-click="check()">
+						<span class="circleInner zhong" ng-class="{ 'yellow': value.carFlag }" ></span>
+					</div>
+					<div class="carImg">
+						<img ng-src="{{ value.img }}" alt="">
+					</div>
+					<div class="carTitle">
+						<p class="carGoodsName ellip">{{ value.name }}</p>
+						<p class="carGoodsPrice">{{ value.price | currency: '￥' }}</p>
+					</div>
+					<div class="sellect-amount">
+                        <span class="sbustract" ng-click="reduce()">
+                            <span class="inner"></span>
+                        </span>
+                        <span class="number">{{ value.count }}</span>
+                        <span class="add" ng-click="add()">
+                            <span class="inner"></span>
+                        </span>
+                	</div>
+				</li>
+			</ul>
+		</div>
+		<div class="money">
+			<div class="allSelect" ng-click="checkAll()"><span class="circleInner spanzhong" ng-class="{ 'yellow': flagAllCheck }"></span>&nbsp;全选</div>
+			<div class="moneyCount">共: <span>{{ allPrice | currency:'￥' }}</span></div>
+			<div class="good">选好了</div>
+			<div class="lightbox" ng-show="(allPrice | currency:'￥') == '￥0.00'"></div>
+		</div>
+	</section>
+	<section ng-show="carGoods.length == 0" class="bg">
+		<div class="goTit">
+			<p>亲,购物车空空</p>
+			<p class="goShop" onclick="location.href='index.html'">去逛逛吧</p>
+		</div>
+	</section>
+</div>

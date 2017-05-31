@@ -1,0 +1,64 @@
+.order .header{
+	height: 4.5rem;
+	border-bottom: 1px solid #e0e0e0;
+	background-color: #f9fafd;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-left: .5rem;
+}
+.order .content{
+	position: absolute;
+	top: 4.6rem;
+	bottom: 60px;
+	left: 0;
+	right: 0;
+	overflow: auto;
+	background-color: #e0e0e0;
+}
+.order .header span{
+	display: inline-block;
+	width: 6.0rem;
+	height: 4.5rem;
+	background: url("../../../imgs/mine/go.png") no-repeat left center;
+	background-size: 40%;
+}
+.order .headerName{
+	position: absolute;
+	left: 6rem;
+	right: 6.0rem;
+	top: 0;
+	bottom: 0;
+	text-align: center;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 4.5rem;
+	color: #333;
+}
+.order .orderList ol{
+	background: #fff;
+	padding: 0 1rem;
+	display: flex;
+}
+.order .orderList li{
+	width: 20%;
+	height: 4.1667rem;
+	line-height: 4.1667rem;
+	text-align: center;
+	color: #333;
+	font-size: 1.2rem;
+	position: relative;
+}
+.order .change:after{
+	content: "";
+	display: inline-block;
+	width: 100%;
+	border-bottom: 1px solid #ff3800;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}

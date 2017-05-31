@@ -1,0 +1,217 @@
+/* -------section------ */
+.market section{
+	position: absolute;
+	top: 4.5833rem;
+	bottom: 5.0rem;
+	left: 0;
+	right: 0;
+	overflow: auto;
+}
+.market .categories-item{
+	width: 23.57%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	overflow-x: hidden;
+}
+.market .categories-item li{
+	border-bottom: 1px solid #e0e0e0;
+	line-height: 4.0rem;
+	color: #6d6d6d;
+	text-align: center;
+	background: #f8f8f8;
+	font-size: 1.2rem;
+	position: relative;
+}
+.market .categories-goods{
+	position: absolute;
+	left: 25%;
+	bottom: 0;
+	top: 0;
+	right: 0;
+
+}
+.market .itemUl{
+	display: flex;
+	border-bottom: 1px solid #e0e0e0;
+	position: absolute;
+	top: 0;
+	left: 25%;
+	right: 0;
+	background-color: rgba(255,255,255,.95);
+}
+.market .itemUl li{
+	width: 50%;
+	text-align: center;
+	font-size: 1.2rem;
+	color: #777;
+	line-height: 4rem;
+	position: relative;
+}
+.market .goodsUl {
+	position: absolute;
+	/* padding-top: 4rem; */
+	top: 4rem;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-x: hidden;
+}
+.market .goodsUl li{
+	position: relative;
+	padding: 0.5rem;
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 1px solid #e0e0e0;
+	line-height: 2rem;
+}
+.market .categories-goods img{
+	width: 8.0rem;
+	height: auto;
+}
+.market .categories-goods .tit{
+	width: 11.0rem;
+}
+.market .categories-goods .goods-name{
+	color: #232b33;
+	overflow: hidden;
+}
+.market .goods-select{
+	font-size: 1rem;
+	padding: .1rem .3rem;
+	display: inline-block;
+	color: red;
+	border-radius: .4rem;
+	margin-right: .3rem;
+	border: 1px solid red;
+	line-height: 1rem;
+	vertical-align: .1rem;
+}
+.market .goods-provilege{
+	background: red;
+	color: #fff;
+}
+.market .goods-weigth{
+	color: #999;
+}
+.market .now-price{
+	color: #ff3800;
+    font-size: 1.2rem;
+}
+.market .market-price{
+	color: #999;
+	font-size: 1.2rem;
+	text-decoration: line-through;
+}
+.market .kuang:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	height: 3.5rem;
+	border-left: .5rem solid #ffd600;
+	transform: translateY(-50%);
+}
+.market .line:before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	height: 2.0rem;
+	border-right: 1px solid #e0e0e0;
+}
+.market .spanbg:after{
+	content: "";
+	display: inline-block;
+	vertical-align: top;
+	width: 1.2rem;
+	height: 4.0rem;
+	background: url("../../../imgs/market/l.png") no-repeat center center;
+	background-size: contain;
+}
+.market .sellect-amount{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 10.0rem;
+	height: 5.0rem;
+}
+.market .sbustract{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	width: 5.0rem;
+	height: 5.0rem;
+	z-index: 2;
+}
+.market .add{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	width: 5.0rem;
+	height: 5.0rem;
+	z-index: 2;
+}
+.market .inner{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 2.6rem;
+	height: 2.6rem;
+	border: 1px solid #ff4300;
+	border-radius: 50%;
+}
+.market .sbustract .inner{
+	background: #ff4300 url("../../../imgs/market/jian.png") no-repeat left center;
+	background-size: 200% auto;
+}
+.market .add .inner{
+	background: #ff4300 url("../../../imgs/market/jian.png") no-repeat -2.6rem center;
+	background-size: 200% auto;
+}
+.market .number{
+	color: #333;
+	font-size: 1.2rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	line-height: 5rem;
+}
+.market .sort{
+	position: absolute;
+	left: 25%;
+	top: 4.0rem;
+	bottom: 0;
+	right: 0;
+	background: rgba(144, 144, 144, 0.5);
+	z-index: 10;
+}
+.market .sortType ul{
+	padding-bottom: 1.0rem;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: rgba(255,255,255,.95);
+}
+.market .sortType li{
+	margin: 0.8rem 0 0 .8rem;
+	padding: .4rem 0.8rem;
+	border: 1px solid #e0e0e0;
+	color: #777;
+	font-size: 1.2rem;
+	border-radius: 0.5rem;
+}
+.market .sortType .yellow {
+	border-color: #ffd600;
+	background-color: #fff9d9;
+}
+.market .none{
+	display: none;
+}

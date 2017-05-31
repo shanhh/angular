@@ -1,0 +1,64 @@
+html,body{
+	font-size: 1.3333rem;
+	font-family: '微软雅黑',Helvetica,Tahoma,Arial,'华文细黑',sans-serif;
+	height: 100%;
+	box-sizing: border-box;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2){
+	html{
+	    max-width: 480px;
+	}
+}
+html{
+	position: relative;
+    margin: auto;
+}
+/* --------------footer-------------- */
+footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 5.0rem;
+	background-color: rgba(246,246,246,.95);
+}
+footer ul{
+	display: flex;
+}
+footer li{
+	width: 25%;
+	text-align: center;
+}
+/* footer .home{
+	height: 3.0rem;
+	background: url("imgs/home .png") no-repeat center center;
+	background-size: auto 2.0rem;
+}
+
+footer .market{
+	height: 3.0rem;
+	background: url("imgs/dian.png") no-repeat center center;
+	background-size: auto 2.0rem;
+}
+footer .car{
+	height: 3.0rem;
+	background: url("imgs/car.png") no-repeat center center;
+	background-size: auto 2.0rem;
+}
+footer .mine{
+	height: 3.0rem;
+	background: url("imgs/mine.png") no-repeat center center;
+	background-size: auto 2.0rem;
+} */
+footer li>div{
+	height: 2.5rem;
+	padding-top: 0.8rem;
+}
+footer li img{
+	height: 2.0rem;
+	width: auto;
+}
+footer p{
+	color: #777;
+	font-size: 1.2rem;
+}

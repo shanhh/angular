@@ -1,0 +1,58 @@
+<!-- <link rel="stylesheet" href="market/css/market.css"> -->
+<div class="market">
+	<div ng-include="'scripts/views/common/header.html'"></div>
+	<section ng-click="hideSort()">
+            <div class="categories">
+                <div class="categories-item">
+                    <ul>
+                        <li ng-repeat="(index,value) in data.data.categories" ng-class="{'kuang': currentIndex == index}" ng-click="chose(index)">{{ value.name }}</li>
+                    </ul>
+                </div>
+                <div class="categories-goods">
+                    <ul class="goodsUl">
+                        <!-- ui-sref = "goodDetail({id: value.id})" -->
+                        <li ng-repeat="value in dateGoods | orderBy: fun "
+                        ng-click = "goDetail()" >
+                            <div class="goodsImg">
+                                <img ng-src="{{ value.img }}" alt="">
+                            </div>
+                            <div class="tit">
+                                <p class="goods-name ellipsis">{{ value.name }}</p>
+                                <p class="goods-promotion">
+                                    <span class="goods-select">精选</span>
+                                    <span ng-class="{'goods-provilege goods-select' : value.pm_desc }" >{{value.pm_desc}}</span>
+                                </p>
+                                <p class="goods-weigth ellipsis">{{ value.specifics }}</p>
+                                <p class="goods-price">
+                                    <span class="now-price">￥{{ value.price }}</span>
+                                    <span class="market-price">￥{{ value.market_price }}</span>
+                                </p>
+                            </div>
+                            <div class="sellect-amount">
+                                <span class="sbustract" ng-show="value.count != 0" ng-click="reduce(); $event.stopPropagation()">
+                                    <span class="inner"></span>
+                                </span>
+                                <span class="number" ng-show="value.count != 0">{{ value.count }}</span>
+                                <span class="add" ng-click="add(); $event.stopPropagation()">
+                                    <span class="inner"></span>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="itemFliter">
+                    <ul class="itemUl">
+                            <li class="line spanbg">全部分类&nbsp;</li>
+                            <li class="spanbg" ng-click="showSort();$event.stopPropagation()">{{ sortText }}&nbsp;</li>
+                    </ul>
+                </div>
+                <div class="sort" ng-class = "{ 'none':flag1 == false}">
+                    <div class="sortType">
+                        <ul>
+                            <li ng-class="{'yellow': sortIndex == index}" ng-click = "sortYellow(index)" ng-repeat="(index, value) in sortArr">{{ value }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+</div>
