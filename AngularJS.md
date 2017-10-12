@@ -1,7 +1,27 @@
 ## AngularJS
 
  ### 常用指令
-
+```html
+   <div class="row">
+      <div class="col-md-4 item-name required">消费金额：</div>
+          <div class="col-md-10">
+             <input type="text"
+                class="form-control"
+                ng-model="vm.auditParams.consume_money"
+                name="consume_money"
+                placeholder="请输入消费金额"
+                ng-pattern="/^[\d]{1,6}(\.[\d]{1,2})?$/"
+                ng-change="vm.marksFlog()"
+                ng-disabled="vm.marks.hasInfo"
+                required/>
+         </div>
+          <div class="col-md-8 error red">
+              <span ng-show="dialogForm.consume_money.$error.required && (dialogForm.consume_money.$touched || vm.submitClick)">消费金额为必填项</span>
+              <span ng-show="dialogForm.consume_money.$error.pattern">消费金额为正数且保留两位小数</span>
+          </div>
+      </div>
+    </div>
+    ```
 1.  ng-app
     整个AngularJS项目的开始指令
     在使用RequireJS+AngularJS中，不需要显示的添加添加`ng-app`指令，而是通过代码动态添加
