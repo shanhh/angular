@@ -21,7 +21,8 @@
           </div>
       </div>
     </div>
-    ```
+    
+```
 1.  ng-app
     整个AngularJS项目的开始指令
     在使用RequireJS+AngularJS中，不需要显示的添加添加`ng-app`指令，而是通过代码动态添加
