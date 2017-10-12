@@ -16,7 +16,8 @@
                 required/>
          </div>
           <div class="col-md-8 error red">
-              <span ng-show="dialogForm.consume_money.$error.required && (dialogForm.consume_money.$touched || vm.submitClick)">消费金额为必填项</span>
+              {{vm.submitClick}}后台提交的时候改为true 通过dialogForm.$valid为true 函数传参
+              <span ng-show="dialogForm.consume_money.$error.required && (dialogForm.consume_money.$touched || vm.submitClick)">消费金额为必填项</span>
               <span ng-show="dialogForm.consume_money.$error.pattern">消费金额为正数且保留两位小数</span>
           </div>
       </div>
